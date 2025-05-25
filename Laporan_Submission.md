@@ -52,14 +52,32 @@ Redwankarimsony. (2023). Heart Disease Data [Data set]. Kaggle. https://www.kagg
 - Menggunakan metrik evaluasi seperti Accuracy, Precision, Recall, dan F1-Score untuk mengukur performa setiap model secara objektif.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
+Dataset yang digunakan berasal dari [Kaggle - Heart Disease Dataset](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data). Dataset ini merupakan subset dari Cleveland Heart Disease Database, yang merupakan salah satu referensi paling umum dalam penelitian machine learning untuk prediksi penyakit jantung.
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+Dataset ini merupakan tipe multivariat (multivariate dataset), artinya terdiri dari banyak variabel numerik dan kategorikal yang digunakan untuk analisis. Tujuan utamanya adalah untuk memprediksi kemungkinan seseorang mengidap penyakit jantung berdasarkan data rekam medis mereka.
 
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+### Variabel-variabel pada Heart Disease Dataset adalah sebagai berikut:
+#### Jumlah Data
+- Jumlah fitur: 14 fitur utama + 1 target
+- Jumlah data (rows): Tergantung file final, umumnya sekitar 300+ data
+#### Fitur-fitur dalam Dataset
+Berikut ini adalah penjelasan dari fitur-fitur yang digunakan:
+- id: ID unik untuk setiap pasien
+- age: Usia pasien (dalam tahun)
+- origin: Lokasi asal data dikumpulkan
+- sex: Jenis kelamin (Male/Female)
+- cp: Jenis nyeri dada (typical angina, atypical angina, non-anginal, asymptomatic)
+- trestbps: Tekanan darah saat istirahat (mm Hg)
+- chol: Kadar kolesterol dalam darah (mg/dl)
+- fbs: Kadar gula darah puasa > 120 mg/dl (1 = ya, 0 = tidak)
+- restecg: Hasil elektrokardiografi saat istirahat (normal, stt abnormality, lv hypertrophy)
+- thalach: Detak jantung maksimum yang dicapai
+- exang: Angina akibat olahraga (1 = ya, 0 = tidak)
+- oldpeak: Depresi ST akibat latihan dibandingkan kondisi istirahat
+- slope: Kemiringan segmen ST saat puncak latihan
+- ca: Jumlah pembuluh darah besar yang terlihat dalam fluoroskopi (0–3)
+- thal: Hasil tes Thalassemia (normal, fixed defect, reversible defect)
+- num: Target (0 = tidak ada penyakit jantung, 1 = ada penyakit jantung)
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
